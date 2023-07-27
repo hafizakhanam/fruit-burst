@@ -1,0 +1,62 @@
+.carousel-item::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+}
+
+.banner-bottom-images {
+    box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.team-area::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(18, 18, 18, 0.70);
+}
+.choose-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 20px;
+    width: 100px;
+    height: 1px;
+    background: rgba(18, 18, 18, 0.80);
+}
+.right-side .choose-title::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: auto;
+    bottom: 20px;
+    width: 100px;
+    height: 1px;
+    background: rgba(18, 18, 18, 0.80);
+}
+
+@media only screen and (max-width: 1024px) {
+    .choose-title::before {
+        left: calc(50% - 50px);
+    }
+    .right-side .choose-title::before {
+        right: calc(50% - 50px);
+    }
+    .navbar-start {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .laptop-menu {
+        justify-content: end;
+    }
+}
